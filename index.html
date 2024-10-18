@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    a {
+        margin-left: 70px;
+    }
+
+    .container {
+        margin-top: 3%;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        color: #243642;
+    }
+
+    h4 {
+        color: #387478;
+    }
+
+    .container h5 {
+        color: #686A6A;
+    }
+
+    .container button {
+        background-color: #387478;
+        color: white;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+
+    p1 {
+        color: #686A6A;
+        font-size: small;
+    }
+
+    p {
+        color: #686A6A;
+        font-size: 10px;
+    }
+
+    .carousel-controls {
+        display: flex;
+        justify-content: center;
+        /* Pusatkan tombol */
+        margin-top: 20px;
+        /* Jarak antara carousel dan tombol */
+    }
+
+    .btn-circle {
+        width: 40px;
+        /* Lebar tombol */
+        height: 40px;
+        /* Tinggi tombol */
+        border-radius: 50%;
+        /* Membuat tombol bulat */
+        border: none;
+        /* Menghapus border default */
+        background-color: #007bff;
+        /* Warna latar belakang tombol */
+        color: white;
+        /* Warna teks atau ikon */
+        display: flex;
+        align-items: center;
+        /* Pusatkan konten dalam tombol */
+        justify-content: center;
+        /* Pusatkan konten dalam tombol */
+        margin: 0 10px;
+        /* Jarak antar tombol */
+    }
+
+    .btn-circle:hover {
+        background-color: #0056b3;
+        /* Warna latar belakang saat hover */
+    }
+
+    .card-img-top {
+        max-width: 100%;
+        /* Maksimal lebar 100% dari container */
+        height: auto;
+        /* Menjaga rasio aspek gambar */
+    }
+
+    .card-img-top1 {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .footer {
+        background-color: #387478;
+        height: 120px;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+
+        /* Ukuran layar maksimal 768px (mobile) */
+        .hide-on-mobile {
+            display: none;
+            /* Menyembunyikan elemen */
+        }
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <a class="navbar-brand" href="#home">My Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link active" aria-current="page" href="#tentang">Tentang Saya</a>
+                    <a class="nav-link" href="#Portofolio Showcase">Portofolio Showcase</a>
+                    <a class="nav-link" href="#sertifikat">Sertifikat</a>
+                    <a class="nav-link " href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="home" class="container">
+            <div class="row">
+                <div class="col-lg-6" style="margin-top:6%;">
+                    <h4><b>Hallo nama saya</b></h4>
+                    <h1><b>Wawan Agus Mulyana</b></h1>
+                    <h5><b>Fresh Graduate</b> & Junior web design</h5>
+                    <button type="button" class="btn">Hubungi Saya</button>
+                </div>
+                <div class="col-lg-6" style="margin-left: -9%;">
+                    <img src="image__7_-removebg.png" width="130%" style="margin-top: 15px;" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="tentang" class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="image 0.png" class="hide-on-mobile" style="margin-top: 50px;" width="80%" alt="">
+                </div>
+                <div class="col-lg-8">
+                    <h4><b>Tentang Saya</b></h4>
+                    <p1>Nama saya Wawan Agus Mulyana, lulusan Sistem Informasi dengan fokus pada pengembangan web. Saya
+                        telah mengikuti pelatihan pemrograman web dasar yang meliputi HTML, CSS, dan JavaScript. Selain
+                        itu, saya memiliki keterampilan lanjutan dalam Microsoft Office dan pengalaman dengan desain
+                        antarmuka menggunakan Figma. Dengan semangat belajar yang tinggi, saya siap berkontribusi dan
+                        terus berkembang di industri teknologi informasi</p1>
+                    <div class="row">
+                        <h5 style=" color: #243642; margin-top: 15px;"><b>Keahlian</b></h5>
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (4).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Figma</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Menengah</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 50%; background-color: #387478;">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (2).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Canva</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Menengah</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 50%; background-color: #387478;">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (1).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Photoshop</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Pemula</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 25%; background-color: #387478;">25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (3).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Framework Bootstrap/b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Menengah</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 50%; background-color: #387478;">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (8).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Mesin</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Pemula</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 25%; background-color: #387478;">25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (7).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>JavaScript</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Pemula</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 25%; background-color: #387478;">25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (6).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Cascading Style Sheets</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Menengah</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 50%; background-color: #387478;">50%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-6 mb-1">
+                            <div class="card" style="height: auto;">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <img src="icon/1 (5).png" width="500px" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="card-body" style="padding: 0;">
+                                            <p class="card-text mb-1"><b>Microsoft Office</b></p>
+                                            <p class="card-text" style="opacity: 70%; margin-top: -10px;">
+                                                <small class="text-body-secondary">Lanjut</small>
+                                            </p>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                style="margin-top: -15px;">
+                                                <div class="progress-bar"
+                                                    style="width: 80%; background-color: #387478;">80%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="Portofolio Showcase" class="container">
+            <h4><b>Portofolio Showcase</b></h4>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/diso.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">landing page</h5>
+                                        <p>Desain website ini dibuat degan menggunakan CSS tanpa Framework apapun ditujuakan unutk memenuhi submision dari pelatihan Dicoding. 
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/diso.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">landing page</h5>
+                                        <p>Desain website ini dibuat degan menggunakan CSS tanpa Framework apapun ditujuakan unutk memenuhi submision dari pelatihan Dicoding. 
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/diso.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">landing page</h5>
+                                        <p>Desain website ini dibuat degan menggunakan CSS tanpa Framework apapun ditujuakan unutk memenuhi submision dari pelatihan Dicoding. 
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./Card/spk.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Pendukung Keputusan</h5>
+                                        <p>Sistem ini dibuat untuk memenuhi kebutuhan penelitian skripsi dimana
+                                            menggunakan metode algoritma SAW dan bahasa pemrograman PHP native dengan
+                                            framework CSS bootsrap. sistem ini digunakan untuk memilih bibit tanaman
+                                            mana yang akan di tanam dengan lokasi yang ada
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kontrol tombol bulat -->
+                <div class="carousel-controls">
+                    <button class="btn btn-circle" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-circle" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="container" id="sertifikat">
+            <h4><b>Sertifikat</b></h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/1.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/2.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/3.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top:-10px;">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/4.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/5.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./serti/6.jpg" class="card-img-top1" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
